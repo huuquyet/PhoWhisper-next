@@ -27,7 +27,8 @@
         "noSvgWithoutTitle": "off"
       },
       "complexity": {
-        "noStaticOnlyClass": "off"
+        "noStaticOnlyClass": "off",
+        "noThisInStatic": "off"
       },
       "correctness": {
         "useExhaustiveDependencies": "off"

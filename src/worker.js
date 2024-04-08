@@ -18,17 +18,17 @@ class PipelineFactory {
   }
 
   static async getInstance(progress_callback = null) {
-    if (PipelineFactory.instance === null) {
-      PipelineFactory.instance = pipeline(PipelineFactory.task, PipelineFactory.model, {
-        quantized: PipelineFactory.quantized,
+    if (this.instance === null) {
+      this.instance = pipeline(this.task, this.model, {
+        quantized: this.quantized,
         progress_callback,
 
         // For medium models, we need to load the `no_attentions` revision to avoid running out of memory
-        revision: PipelineFactory.model.includes('/whisper-medium') ? 'no_attentions' : 'main',
+        revision: this.model.includes('/whisper-medium') ? 'no_attentions' : 'main',
       })
     }
 
-    return PipelineFactory.instance
+    return this.instance
   }
 }
 
@@ -62,7 +62,7 @@ class AutomaticSpeechRecognitionPipelineFactory extends PipelineFactory {
 }
 
 const transcribe = async (audio, model, multilingual, quantized, subtask, language) => {
-  const isDistilWhisper = model.startsWith('distil-whisper/')
+  const isDistilWhisper = model.startsWith('distil-whisper/') || model.startsWith('huuquyet')
 
   let modelName = model
   if (!isDistilWhisper && !multilingual) {

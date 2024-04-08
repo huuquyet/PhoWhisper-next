@@ -374,23 +374,18 @@ function SettingsModal(props: {
             }}
           >
             {Object.keys(models)
-              .filter(
-                (key) =>
-                  props.transcriber.quantized ||
-                  // @ts-ignore
-                  models[key].length === 2
-              )
+              .filter((key) => props.transcriber.quantized || models[key].length === 2)
               .filter(
                 (key) => !props.transcriber.multilingual || !key.startsWith('distil-whisper/')
               )
               .map((key) => (
                 <option key={key} value={key}>{`${key}${
-                  (props.transcriber.multilingual || key.startsWith('distil-whisper/'))
-                  || key.startsWith('huuquyet') ? '' : '.en'
-                } (${
-                  // @ts-ignore
-                  models[key][props.transcriber.quantized ? 0 : 1]
-                }MB)`}</option>
+                  props.transcriber.multilingual ||
+                  key.startsWith('distil-whisper/') ||
+                  key.startsWith('huuquyet')
+                    ? ''
+                    : '.en'
+                } (${models[key][props.transcriber.quantized ? 0 : 1]}MB)`}</option>
               ))}
           </select>
           <div className="flex justify-between items-center mb-3 px-1">

@@ -24,7 +24,8 @@ export default {
   // DEFAULT_AUDIO_URL: `https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/${
   //   isMobileOrTablet ? 'jfk' : 'ted_60_16k'
   // }.wav`,
-  DEFAULT_AUDIO_URL: 'https://vnkings.com/wp-content/uploads/2019/06/Demo_ver.mp3',
+  DEFAULT_AUDIO_URL:
+    'https://cors-anywhere.herokuapp.com/https://vnkings.com/wp-content/uploads/2019/06/Demo_ver.mp3',
   DEFAULT_MODEL: 'huuquyet/PhoWhisper-tiny',
   DEFAULT_SUBTASK: 'transcribe',
   DEFAULT_LANGUAGE: 'english',
