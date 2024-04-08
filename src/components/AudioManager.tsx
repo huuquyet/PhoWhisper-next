@@ -349,6 +349,7 @@ function SettingsModal(props: {
 
   const models = {
     // Original checkpoints
+    'huuquyet/PhoWhisper-tiny': [40, 150],
     'Xenova/whisper-tiny': [41, 152],
     'Xenova/whisper-base': [77, 291],
     'Xenova/whisper-small': [249],
@@ -384,7 +385,8 @@ function SettingsModal(props: {
               )
               .map((key) => (
                 <option key={key} value={key}>{`${key}${
-                  props.transcriber.multilingual || key.startsWith('distil-whisper/') ? '' : '.en'
+                  (props.transcriber.multilingual || key.startsWith('distil-whisper/'))
+                  || key.startsWith('huuquyet') ? '' : '.en'
                 } (${
                   // @ts-ignore
                   models[key][props.transcriber.quantized ? 0 : 1]
