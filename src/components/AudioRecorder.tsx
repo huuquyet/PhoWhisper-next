@@ -96,6 +96,7 @@ export default function AudioRecorder(props: {
 
     return () => {
       if (stream) {
+        // @ts-ignore
         for (const track of stream.getTracks()) {
           track.stop()
         }

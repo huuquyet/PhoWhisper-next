@@ -394,7 +394,9 @@ class WebmContainer extends WebmBase<ContainerData[]> {
     }
   }
   writeUint(x: number, draft = false) {
-    for (let bytes = 1, flag = 0x80; x >= flag && bytes < 8; bytes++, flag *= 0x80) {}
+    let bytes
+    let flag
+    for (bytes = 1, flag = 0x80; x >= flag && bytes < 8; bytes++, flag *= 0x80) {}
 
     if (!draft) {
       let value = flag + x
