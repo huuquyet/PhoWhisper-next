@@ -34,14 +34,14 @@ yarn-error.log*
 # next.js
 **/.next/*
 **/out/
+**/dist
+**/dist-ssr
 
 # tamagui
 **/.tamagui/*
 
 # production
 /build
-/dist
-/dist-ssr
 
 # local env files
 .env.local

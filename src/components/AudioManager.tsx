@@ -1,3 +1,5 @@
+'use client'
+
 import axios from 'axios'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
@@ -349,7 +351,7 @@ function SettingsModal(props: {
 
   const models = {
     // Original checkpoints
-    'huuquyet/PhoWhisper-tiny': [40, 150],
+    'huuquyet/PhoWhisper-tiny': [43, 154],
     'Xenova/whisper-tiny': [41, 152],
     'Xenova/whisper-base': [77, 291],
     'Xenova/whisper-small': [249],
