@@ -11,7 +11,9 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,
-    "paths": { "@/*": ["./app/*", "./src/*"] },
+    "paths": {
+      "@/*": ["./app/*", "./src/*"]
+    },
     "plugins": [
       {
         "name": "next"
@@ -23,6 +25,6 @@
     "target": "ESNext",
     "useDefineForClassFields": true
   },
-  "include": ["src", "**/*.tsx", "./next-env.d.ts", "./dist/types/**/*.ts"],
+  "include": ["src", "app", "./next-env.d.ts", "./dist/types/**/*.ts", ".next/types/**/*.ts"],
   "exclude": ["./node_modules"]
 }
