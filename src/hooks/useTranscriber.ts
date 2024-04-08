@@ -78,7 +78,6 @@ export function useTranscriber(): Transcriber {
             case "update":
                 // Received partial update
                 // console.log("update", message);
-                // eslint-disable-next-line no-case-declarations
                 const updateMessage = message as TranscriberUpdateData;
                 setTranscript({
                     isBusy: true,
@@ -89,7 +88,6 @@ export function useTranscriber(): Transcriber {
             case "complete":
                 // Received complete transcript
                 // console.log("complete", message);
-                // eslint-disable-next-line no-case-declarations
                 const completeMessage = message as TranscriberCompleteData;
                 setTranscript({
                     isBusy: false,
