@@ -9,26 +9,26 @@
     "dev": "vite",
     "doctor": "yarn dlx @yarnpkg/doctor",
     "lint": "yarn dlx @biomejs/biome check --apply .",
-    "preview": "vite preview",
+    "start": "vite --host",
     "update": "yarn upgrade-interactive",
     "vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.13",
-    "@xenova/transformers": "^2.7.0",
-    "axios": "^1.3.4",
+    "@headlessui/react": "^1.7.18",
+    "@xenova/transformers": "^2.16.1",
+    "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.4.4",
-    "vite": "^4.2.0"
+    "vite": "^5.2.8"
   },
   "overrides": {
     "semver": "^7.5.3",
