@@ -352,6 +352,7 @@ function SettingsModal(props: {
   const models = {
     // Original checkpoints
     'huuquyet/PhoWhisper-tiny': [43, 154],
+    'huuquyet/PhoWhisper-base': [75, 285],
     'huuquyet/PhoWhisper-small': [250, 970],
     'Xenova/whisper-tiny': [41, 152],
     'Xenova/whisper-base': [77, 291],
