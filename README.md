@@ -1,8 +1,11 @@
 # PhoWhisper Web
 
-ML-powered speech recognition directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js).
+ML-powered speech recognition directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js) + Next.js.
 
-Using [🤗 PhoWhisper](https://github.com/VinAIResearch/PhoWhisper) model converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-tiny)
+Using [🤗 PhoWhisper](https://github.com/VinAIResearch/PhoWhisper) models:
+- [PhoWhisper-tiny](https://hf.co/vinai/PhoWhisper-tiny/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-tiny)
+- [PhoWhisper-base](https://hf.co/vinai/PhoWhisper-base/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-base)
+- [PhoWhisper-small](https://hf.co/vinai/PhoWhisper-small/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-small)
 
 Check out the demo site [here](https://pho-whisper-web.vercel.app/). 
 
