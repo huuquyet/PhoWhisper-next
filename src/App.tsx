@@ -26,7 +26,7 @@ export default function App() {
           🤗 Transformers.js
         </a>{' '}
         + Next.js{' '}
-        <a className="underline" href="https://github.com/huuquyet/PhoWhispher-next">
+        <a className="underline" href="https://github.com/huuquyet/PhoWhisper-next">
           Give it a ⭐️
         </a>
       </div>
