@@ -7,7 +7,7 @@ Using [🤗 PhoWhisper](https://github.com/VinAIResearch/PhoWhisper) models:
 - [PhoWhisper-base](https://hf.co/vinai/PhoWhisper-base/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-base)
 - [PhoWhisper-small](https://hf.co/vinai/PhoWhisper-small/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-small)
 
-Check out the demo site [here](https://pho-whisper-next.vercel.app/). 
+Check out the demo site on [spaces](https://hf.co/spaces/huuquyet/PhoWhisper-next) or [Vercel app](https://pho-whisper-next.vercel.app/). 
 
 https://github.com/xenova/whisper-web/assets/26504141/fb170d84-9678-41b5-9248-a112ecc74c27
 
