@@ -24,6 +24,10 @@ export default function App() {
         Made with{' '}
         <a className="underline" href="https://github.com/xenova/transformers.js">
           🤗 Transformers.js
+        </a>{' '}
+        + Next.js{' '}
+        <a className="underline" href="https://github.com/huuquyet/PhoWhispher-next">
+          Give it a ⭐️
         </a>
       </div>
     </div>
