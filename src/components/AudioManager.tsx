@@ -453,7 +453,7 @@ function SettingsModal(props: {
                 }}
               >
                 <option value={'transcribe'}>Transcribe</option>
-                <option value={'translate'}>Translate (to English)</option>
+                <option value={'translate'}>Translate (to Vietnamese)</option>
               </select>
             </>
           )}

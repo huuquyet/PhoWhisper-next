@@ -14,6 +14,7 @@
     "vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.6",
     "@headlessui/react": "^1.7.18",
     "@vercel/analytics": "^1.2.2",
     "@xenova/transformers": "^2.16.1",
@@ -31,7 +32,8 @@
     "postcss": "^8.4.38",
     "sharp": "^0.33.3",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.4",
+    "webpack": "^5.91.0"
   },
   "packageManager": "yarn@4.1.1"
 }

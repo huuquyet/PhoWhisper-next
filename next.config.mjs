@@ -1,3 +1,10 @@
+import withPWAInit from '@ducanh2912/next-pwa'
+
+const withPWA = withPWAInit({
+  dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
+})
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // (Optional) Export as a static site
@@ -5,6 +12,7 @@ const nextConfig = {
   output: 'export', // Outputs a Single-Page Application (SPA).
   distDir: './dist', // Changes the build output directory to `./dist/`.
 
+  reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   // Override the default webpack configuration
   webpack: (config) => {
     // See https://webpack.js.org/configuration/resolve/#resolvealias
@@ -17,4 +25,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withPWA(nextConfig)

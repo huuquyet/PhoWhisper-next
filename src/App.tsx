@@ -14,7 +14,7 @@ export default function App() {
           PhoWhisper Web
         </h1>
         <h2 className="mt-3 mb-5 px-4 text-center text-1xl font-semibold tracking-tight text-slate-900 sm:text-2xl">
-          ML-powered speech recognition directly in your browser
+          ML-powered speech recognition for Vietnamese directly in your browser
         </h2>
         <AudioManager transcriber={transcriber} />
         <Transcript transcribedData={transcriber.output} />

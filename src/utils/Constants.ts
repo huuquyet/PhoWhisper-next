@@ -28,7 +28,7 @@ export default {
     'https://cors-anywhere.herokuapp.com/https://vnkings.com/wp-content/uploads/2019/06/Demo_ver.mp3',
   DEFAULT_MODEL: 'huuquyet/PhoWhisper-tiny',
   DEFAULT_SUBTASK: 'transcribe',
-  DEFAULT_LANGUAGE: 'english',
+  DEFAULT_LANGUAGE: 'vietnamese',
   DEFAULT_QUANTIZED: isMobileOrTablet,
   DEFAULT_MULTILINGUAL: false,
 }
