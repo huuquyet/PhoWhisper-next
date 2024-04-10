@@ -21,11 +21,8 @@ function mobileTabletCheck() {
 const isMobileOrTablet = mobileTabletCheck()
 export default {
   SAMPLING_RATE: 16000,
-  // DEFAULT_AUDIO_URL: `https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/${
-  //   isMobileOrTablet ? 'jfk' : 'ted_60_16k'
-  // }.wav`,
   DEFAULT_AUDIO_URL:
-    'https://cors-anywhere.herokuapp.com/https://vnkings.com/wp-content/uploads/2019/06/Demo_ver.mp3',
+    'https://huggingface.co/datasets/VINH123/tiengviet/resolve/main/wa2vec2/Datasets/wavs/LJ004-0169.wav',
   DEFAULT_MODEL: 'huuquyet/PhoWhisper-tiny',
   DEFAULT_SUBTASK: 'transcribe',
   DEFAULT_LANGUAGE: 'vietnamese',
