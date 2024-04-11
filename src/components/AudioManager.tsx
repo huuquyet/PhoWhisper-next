@@ -354,10 +354,9 @@ function SettingsModal(props: {
     'huuquyet/PhoWhisper-tiny': [43, 154],
     'huuquyet/PhoWhisper-base': [75, 285],
     'huuquyet/PhoWhisper-small': [250, 970],
+    'huuquyet/PhoWhisper-medium': [776],
     'Xenova/whisper-tiny': [41, 152],
     'Xenova/whisper-base': [77, 291],
-    'Xenova/whisper-small': [249],
-    'Xenova/whisper-medium': [776],
 
     // Distil Whisper (English-only)
     'distil-whisper/distil-medium.en': [402],
