@@ -17,22 +17,22 @@
     "@ducanh2912/next-pwa": "^10.2.6",
     "@headlessui/react": "^1.7.18",
     "@vercel/analytics": "^1.2.2",
-    "@xenova/transformers": "^2.16.1",
+    "@xenova/transformers": "^2.17.0",
     "axios": "^1.6.8",
-    "next": "^14.1.4",
+    "next": "^14.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.5",
-    "@types/react": "^18.2.75",
-    "@types/react-dom": "^18.2.24",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.77",
+    "@types/react-dom": "^18.2.25",
     "autoprefixer": "^10.4.19",
     "onnxruntime-node": "^1.17.0",
     "postcss": "^8.4.38",
     "sharp": "^0.33.3",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "webpack": "^5.91.0"
   },
   "packageManager": "yarn@4.1.1"
