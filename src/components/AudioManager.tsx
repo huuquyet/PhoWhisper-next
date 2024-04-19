@@ -355,7 +355,7 @@ function SettingsModal(props: {
     'huuquyet/PhoWhisper-base': [75, 285],
     'huuquyet/PhoWhisper-small': [250, 970],
     'huuquyet/PhoWhisper-medium': [776],
-    'huuquyet/PhoWhisper-large': [990],
+    'huuquyet/PhoWhisper-large': [3139],
     'Xenova/whisper-tiny': [41, 152],
     'Xenova/whisper-base': [77, 291],
     // 'Xenova/whisper-small': [249],
