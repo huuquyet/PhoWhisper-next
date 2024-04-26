@@ -22,7 +22,7 @@ const isMobileOrTablet = mobileTabletCheck()
 export default {
   SAMPLING_RATE: 16000,
   DEFAULT_AUDIO_URL:
-    'https://huggingface.co/datasets/VINH123/tiengviet/resolve/main/wa2vec2/Datasets/wavs/LJ004-0169.wav',
+    'https://huggingface.co/spaces/huuquyet/PhoWhisper-next/resolve/main/demo.flac',
   DEFAULT_MODEL: 'huuquyet/PhoWhisper-tiny',
   DEFAULT_SUBTASK: 'transcribe',
   DEFAULT_LANGUAGE: 'vietnamese',

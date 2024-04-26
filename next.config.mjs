@@ -29,7 +29,7 @@ const nextConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       sharp$: false,
-      'onnxruntime-web$': false,
+      'onnxruntime-node$': false,
     }
     return config
   },
