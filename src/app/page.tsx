@@ -1,4 +1,3 @@
-import '@/css/index.css'
 import dynamic from 'next/dynamic'
 
 export default function Page() {

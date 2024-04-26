@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
+import './globals.css'
 
 const APP_NAME = 'PhoWhisper-next'
 const APP_DEFAULT_TITLE = 'PhoWhisper using Transformers.js + Next.js'
