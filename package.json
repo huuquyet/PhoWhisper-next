@@ -1,6 +1,6 @@
 {
   "name": "whisper-web",
-  "private": true,
+  "description": "ML-powered speech recognition for Vietnamese directly in your browser, built with Transformers.js",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -35,5 +35,22 @@
     "typescript": "^5.4.5",
     "webpack": "^5.91.0"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "repository": "git@github.com:huuquyet/PhoWhisper-next",
+  "bugs": {
+    "url": "https://github.com/huuquyet/PhoWhisper-next/issues",
+    "email": "huuquyetng@gmail.com"
+  },
+  "homepage": "https://hf.co/spaces/huuquyet/PhoWhisper-next",
+  "license": "MIT",
+  "keywords": [
+    "PhoWhisper",
+    "Transformers.js",
+    "Next.js",
+    "speech-regconition",
+    "vietnamese",
+    "vinai",
+    "onnx-models",
+    "whisper"
+  ]
 }
