@@ -4,7 +4,7 @@ I'm really glad that you reading this, feel free to contribute to this project:
 
 - 🍴 Fork this repo [here](https://github.com/huuquyet/PhoWhisper-next/fork)
 - 🔨 **Read through the contributing guidelines below**
-- 👥 Add yourself as a contributor under credits
+- 👥 Add yourself as a contributor in [README](../README.md)
 - 🔧 Make a pull request [here](https://github.com/huuquyet/PhoWhisper-next/compare)
 - 🎉 Get your pull request approved - success!
 
