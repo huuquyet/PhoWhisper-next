@@ -2,7 +2,7 @@
 
 # PhoWhisper Web
 
-ML-powered speech recognition for Vietnamese directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js) + Next.js.
+ML-powered speech recognition for Vietnamese directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js) + [Next.js](https://nextjs.org/).
 
 Using [🤗 PhoWhisper](https://github.com/VinAIResearch/PhoWhisper) models:
 - [PhoWhisper-tiny](https://hf.co/vinai/PhoWhisper-tiny/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-tiny)
@@ -19,20 +19,28 @@ https://github.com/xenova/whisper-web/assets/26504141/fb170d84-9678-41b5-9248-a1
 
 ## Running locally
 
-1. Clone the repo and install dependencies:
+1. Clone the repo and install dependencies with [bun](https://bun.sh):
 
     ```bash
     git clone https://github.com/huuquyet/PhoWhisper-next.git
     cd PhoWhisper-next
-    yarn install
+    bun install
     ```
 
 2. Run the development server:
 
     ```bash
-    yarn dev
+    bun dev
     ```
     > Firefox users need to change the `dom.workers.modules.enabled` setting in `about:config` to `true` to enable Web Workers.
     > Check out [this issue](https://github.com/xenova/whisper-web/issues/8) for more details.
 
 3. Open the link (e.g., [http://localhost:3000/](http://localhost:3000/)) in your browser.
+
+
+## Acknowledgement
+
+- [Whisper-web](https://github.com/xenova/whisper-web)
+- [PhoWhisper](https://github.com/VinAIResearch/PhoWhisper)
+- [Transformers.js](https://github.com/xenova/transformers.js)
+- [Next.js](https://nextjs.org)
