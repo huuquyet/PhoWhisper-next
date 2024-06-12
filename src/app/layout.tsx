@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import './globals.css'
+import type { ReactNode } from 'react'
 
 const APP_NAME = 'PhoWhisper-next'
 const APP_DEFAULT_TITLE = 'PhoWhisper using Transformers.js + Next.js'
@@ -9,6 +10,24 @@ const APP_DESCRIPTION =
   'PhoWhisper: Automatic Speech Recognition for Vietnamese (2024) using Transformer.js + Next.js'
 const APP_URL = 'https://hf.co/spaces/huuquyet/PhoWhisper-next/'
 const TWITTER = '@HuuQuyetNg'
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode
+}) {
+  return (
+    <html lang="en">
+      <head />
+      <body>
+        <div id="root">
+          {children}
+          <Analytics />
+        </div>
+      </body>
+    </html>
+  )
+}
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
@@ -37,7 +56,7 @@ export const metadata: Metadata = {
     },
     description: APP_DESCRIPTION,
     url: APP_URL,
-    images: ['/icon/share.png'],
+    images: ['/icons/vercel.svg'],
   },
   twitter: {
     card: 'summary',
@@ -49,22 +68,4 @@ export const metadata: Metadata = {
     site: TWITTER,
   },
   keywords: ['PhoWhisper', 'Transformers.js', 'Next.js', 'speech-regconition', 'vietnamese'],
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <head />
-      <body>
-        <div id="root">
-          {children}
-          <Analytics />
-        </div>
-      </body>
-    </html>
-  )
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import axios from 'axios'
-import type React from 'react'
+import type { ChangeEvent, React } from 'react'
 import { useCallback, useEffect, useState } from 'react'
 import type { Transcriber } from '../hooks/useTranscriber'
 import Constants from '../utils/Constants'
@@ -521,7 +521,7 @@ function UrlModal(props: {
 }) {
   const [url, setUrl] = useState(Constants.DEFAULT_AUDIO_URL)
 
-  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     setUrl(event.target.value)
   }
 

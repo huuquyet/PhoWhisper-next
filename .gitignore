@@ -65,6 +65,7 @@ thumbs.db
 
 # IDE
 .idea
+.vscode
 
 # pwa
 **/sw*
