@@ -12,6 +12,7 @@
     "jsx": "preserve",
     "moduleDetection": "force",
     "allowJs": true,
+    "allowImportingTsExtensions": true,
 
     "moduleResolution": "Bundler",
     "esModuleInterop": true,

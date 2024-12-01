@@ -1,8 +1,8 @@
 'use client'
 
 import axios from 'axios'
-import type { ChangeEvent, React } from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import type { ChangeEvent } from 'react'
+import { useEffect, useState } from 'react'
 import type { Transcriber } from '../hooks/useTranscriber'
 import Constants from '../utils/Constants'
 import AudioPlayer from './AudioPlayer'

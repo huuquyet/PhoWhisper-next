@@ -19,10 +19,8 @@ const nextConfig = {
     styledComponents: true,
   },
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
-  experimental: {
-    // Indicate that these packages should not be bundled by webpack
-    serverComponentsExternalPackages: ['sharp', 'onnxruntime-web'],
-  },
+  // Indicate that these packages should not be bundled by webpack
+  serverExternalPackages: ['sharp', 'onnxruntime-web'],
   // Override the default webpack configuration
   webpack: (config) => {
     // See https://webpack.js.org/configuration/resolve/#resolvealias
