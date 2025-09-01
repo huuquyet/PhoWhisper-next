@@ -15,9 +15,7 @@ function getMimeType() {
   return undefined
 }
 
-export default function AudioRecorder(props: {
-  onRecordingComplete: (blob: Blob) => void
-}) {
+export default function AudioRecorder(props: { onRecordingComplete: (blob: Blob) => void }) {
   const [recording, setRecording] = useState(false)
   const [duration, setDuration] = useState(0)
   const [recordedBlob, setRecordedBlob] = useState<Blob | null>(null)
@@ -98,7 +96,7 @@ export default function AudioRecorder(props: {
 
     return () => {
       if (stream) {
-        // @ts-ignore
+        // @ts-expect-error
         for (const track of stream.getTracks()) {
           track.stop()
         }

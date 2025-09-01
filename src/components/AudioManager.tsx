@@ -1,16 +1,16 @@
 'use client'
 
 import axios from 'axios'
-import type { ChangeEvent } from 'react'
+import type { ChangeEvent, JSX } from 'react'
 import { useEffect, useState } from 'react'
 import type { Transcriber } from '../hooks/useTranscriber'
 import Constants from '../utils/Constants'
 import AudioPlayer from './AudioPlayer'
 import AudioRecorder from './AudioRecorder'
-import Progress from './Progress'
-import { TranscribeButton } from './TranscribeButton'
 import Modal from './modal/Modal'
 import { UrlInput } from './modal/UrlInput'
+import Progress from './Progress'
+import { TranscribeButton } from './TranscribeButton'
 
 function titleCase(str: string) {
   str = str.toLowerCase()
@@ -309,11 +309,7 @@ export function AudioManager(props: { transcriber: Transcriber }) {
   )
 }
 
-function SettingsTile(props: {
-  icon: JSX.Element
-  className?: string
-  transcriber: Transcriber
-}) {
+function SettingsTile(props: { icon: JSX.Element; className?: string; transcriber: Transcriber }) {
   const [showModal, setShowModal] = useState(false)
 
   const onClick = () => {
@@ -324,7 +320,7 @@ function SettingsTile(props: {
     setShowModal(false)
   }
 
-  const onSubmit = (url: string) => {
+  const onSubmit = () => {
     onClose()
   }
 
@@ -383,7 +379,7 @@ function SettingsModal(props: {
               .filter(
                 (key) =>
                   props.transcriber.quantized ||
-                  // @ts-ignore
+                  // @ts-expect-error
                   models[key].length === 2
               )
               .filter(
@@ -397,7 +393,7 @@ function SettingsModal(props: {
                     ? ''
                     : '.en'
                 } (${
-                  // @ts-ignore
+                  // @ts-expect-error
                   models[key][props.transcriber.quantized ? 0 : 1]
                 }MB)`}</option>
               ))}
@@ -486,11 +482,7 @@ function ProgressBar(props: { progress: string }) {
   )
 }
 
-function UrlTile(props: {
-  icon: JSX.Element
-  text: string
-  onUrlUpdate: (url: string) => void
-}) {
+function UrlTile(props: { icon: JSX.Element; text: string; onUrlUpdate: (url: string) => void }) {
   const [showModal, setShowModal] = useState(false)
 
   const onClick = () => {
@@ -514,11 +506,7 @@ function UrlTile(props: {
   )
 }
 
-function UrlModal(props: {
-  show: boolean
-  onSubmit: (url: string) => void
-  onClose: () => void
-}) {
+function UrlModal(props: { show: boolean; onSubmit: (url: string) => void; onClose: () => void }) {
   const [url, setUrl] = useState(Constants.DEFAULT_AUDIO_URL)
 
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -584,11 +572,7 @@ function FileTile(props: {
     elem.value = ''
   }
 
-  return (
-    <>
-      <Tile icon={props.icon} text={props.text} onClick={() => elem.click()} />
-    </>
-  )
+  return <Tile icon={props.icon} text={props.text} onClick={() => elem.click()} />
 }
 
 function RecordTile(props: {
@@ -660,11 +644,7 @@ function RecordModal(props: {
   )
 }
 
-function Tile(props: {
-  icon: JSX.Element
-  text?: string
-  onClick?: () => void
-}) {
+function Tile(props: { icon: JSX.Element; text?: string; onClick?: () => void }) {
   return (
     <button
       type="button"

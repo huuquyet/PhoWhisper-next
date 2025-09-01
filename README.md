@@ -2,7 +2,7 @@
 
 # PhoWhisper Web
 
-ML-powered speech recognition for Vietnamese directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js) + [Next.js](https://nextjs.org/).
+ML-powered speech recognition for Vietnamese directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js) + [Vite](https://vite.dev/).
 
 Using [🤗 PhoWhisper](https://github.com/VinAIResearch/PhoWhisper) models:
 - [PhoWhisper-tiny](https://hf.co/vinai/PhoWhisper-tiny/) converted to [ONNX model](https://hf.co/huuquyet/PhoWhisper-tiny)
@@ -48,4 +48,4 @@ https://github.com/xenova/whisper-web/assets/26504141/fb170d84-9678-41b5-9248-a1
 - [Whisper-web](https://github.com/xenova/whisper-web)
 - [PhoWhisper](https://github.com/VinAIResearch/PhoWhisper)
 - [Transformers.js](https://github.com/xenova/transformers.js)
-- [Next.js](https://nextjs.org)
+- [Vite](https://vite.dev)

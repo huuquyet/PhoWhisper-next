@@ -1,6 +1,5 @@
-import dynamic from 'next/dynamic'
+import App from '@/App'
 
 export default function Page() {
-  const App = dynamic(() => import('@/App'))
   return <App />
 }

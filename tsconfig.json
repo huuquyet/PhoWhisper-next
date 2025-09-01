@@ -32,13 +32,8 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "noPropertyAccessFromIndexSignature": true
   },
-  "include": ["src", "src/app", "./next-env.d.ts", "./dist/types/**/*.ts", ".next/types/**/*.ts"],
+  "include": ["src", "src/app", "./dist/types/**/*.ts"],
   "exclude": ["./node_modules"]
 }

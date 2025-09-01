@@ -25,7 +25,7 @@ export default function App() {
         <a className="underline" href="https://github.com/xenova/transformers.js">
           🤗 Transformers.js
         </a>{' '}
-        + Next.js{' '}
+        + Vite{' '}
         <a className="underline" href="https://github.com/huuquyet/PhoWhisper-next">
           Give it a ⭐️
         </a>

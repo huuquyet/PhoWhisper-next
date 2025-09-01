@@ -363,7 +363,7 @@ class WebmContainer extends WebmBase<ContainerData[]> {
     return value
   }
   updateBySource() {
-    let end: number | undefined = undefined
+    let end: number | undefined
     this.data = []
     for (this.offset = 0; this.offset < this.source!.length; this.offset = end) {
       const id = this.readUint()
