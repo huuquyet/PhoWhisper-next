@@ -250,10 +250,7 @@ class WebmBase<T> {
   source?: Uint8Array
   data?: T
 
-  constructor(
-    private name = 'Unknown',
-    private type = 'Unknown'
-  ) {}
+  constructor(_name = 'Unknown', _type = 'Unknown') {}
 
   updateBySource() {}
 
